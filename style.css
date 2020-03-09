@@ -639,6 +639,10 @@ footer .social a:hover{
     font-size: 15px;
 }
 
+.snapgram .gram-gallery .item{
+  cursor: pointer;
+}
+
 /* @media(max-width: 650px){
     .home .home-content .block h1{
         font-size: 50px;
@@ -701,11 +705,18 @@ footer .social a:hover{
         background-color: #ffffff;
     }
 } */
-
+#modalImage{
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  margin-top: 3vh;
+}
 @media only screen and (max-width: 768px) {
   .snapgram .gram-gallery .item img{
       width: 100%;
-      height: 9rem;
+      height: 8rem;
       display: block;
   }
   .snapgram .gram-gallery .item .overlay{
@@ -714,7 +725,7 @@ footer .social a:hover{
       top: 0;
       bottom: 0;
       right: 0;
-      height: 9rem;
+      height: 8rem;
       background-color: rgba(0,0,0,0.6);
       z-index: 10;
       display: flex;
@@ -757,5 +768,16 @@ footer .social a:hover{
   header .navbar ul li a.active::before{
       width: 25%;
       left: 0;
+  }
+  #modalImage{
+    width: 80%;
+    height: 80%;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    margin-top: 15vh;
+  }
+  .close{
+    margin-right: 3%;
   }
 }

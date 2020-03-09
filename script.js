@@ -53,4 +53,14 @@ const navbar=document.querySelector(".navbar");
 
 //     menuBar.addEventListener("click",function(){
 //         document.querySelector(".navbar").classList.toggle("show");
-//     }) 
+//     })
+
+var numberArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'];
+for (var i = 0; i < numberArray.length; i++){
+    let imageIdTag = "#photo" + numberArray[i];
+      $(imageIdTag).click(function() {
+          let srcLink = $(imageIdTag + ' img').attr('src');
+            $('#modalImage').attr('src', srcLink)
+            $('#thisModal').modal('show');
+      });
+}

@@ -7,7 +7,24 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <body>
+      <div class="modal" id='thisModal' tabindex="-1" role="dialog">
+              <button type="button" class="close" data-dismiss='modal' aria-label="Close" style='color: white; margin-top: 1%'>
+                  <span aria-hidden="true">&times;</span>
+              </button>
+        <div class="modal-dialog" role="document">
+          <div class='container'>
+            <div class='row justify-content-center'>
+                <img id='modalImage'>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
 <!-- START HEADER-->
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -110,7 +127,7 @@
                             </div>
                             <!-- MY LINKS-->
                             <div class="social-links">
-                                    <a href="https://web.facebook.com/jellyciousjelly"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://www.facebook.com/jellyciousjelly"><i class="fa fa-facebook"></i></a>
                                     <a href="https://twitter.com/whtvrimElle"><i class="fa fa-twitter"></i></a>
                                     <a href="https://www.instagram.com/jellyciousjelly_/"><i class="fa fa-instagram"></i></a>
                             </div>
@@ -327,7 +344,7 @@
             </div>
             <div class="row">
                 <div class="col-12 gram-gallery">
-                    <div class="item" data-id="portraits">
+                    <div class="item" id='photo1' data-id="portraits">
                         <div class="inner">
                         <img src="pics/portrait1.jpg" alt="potrait1">
                         <div class="overlay">
@@ -335,7 +352,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="item" data-id="roles">
+                    <div class="item" id='photo2' data-id="roles">
                         <div class="inner">
                         <img src="pics/sarah.jpg" alt="sarah">
                         <div class="overlay">
@@ -343,7 +360,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="item" data-id="portraits">
+                    <div class="item" id='photo3' data-id="portraits">
                         <div class="inner">
                         <img src="pics/portrait2.jpg" alt="potrait2">
                         <div class="overlay">
@@ -351,7 +368,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="item" data-id="roles">
+                    <div class="item" id='photo4' data-id="roles">
                         <div class="inner">
                         <img src="pics/zummerzombie.jpg" alt="zummerzombie">
                         <div class="overlay">
@@ -359,7 +376,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="item" data-id="roles">
+                    <div class="item" id='photo5' data-id="roles">
                         <div class="inner">
                         <img src="pics/black.jpg" alt="black">
                         <div class="overlay">
@@ -367,7 +384,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="item" data-id="roles">
+                    <div class="item" id='photo6' data-id="roles">
                         <div class="inner">
                         <img src="pics/indak.jpg" alt="indak">
                         <div class="overlay">
@@ -375,7 +392,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="item" data-id="roles">
+                    <div class="item" id='photo7' data-id="roles">
                         <div class="inner">
                         <img src="pics/a2n.jpg" alt="a2n">
                         <div class="overlay">
@@ -383,7 +400,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="item" data-id="portraits">
+                    <div class="item" id='photo8' data-id="portraits">
                         <div class="inner">
                         <img src="pics/portrait3.jpg" alt="potrait3">
                         <div class="overlay">
@@ -391,7 +408,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="item" data-id="portraits">
+                    <div class="item" id='photo9' data-id="portraits">
                         <div class="inner">
                         <img src="pics/portrait4.jpg" alt="potrait4">
                         <div class="overlay">
@@ -399,7 +416,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="item" data-id="portraits">
+                    <div class="item" id='photo10' data-id="portraits">
                         <div class="inner">
                         <img src="pics/portrait5.jpg" alt="potrait5">
                         <div class="overlay">
@@ -407,7 +424,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="item" data-id="portraits">
+                    <div class="item" id='photo11' data-id="portraits">
                         <div class="inner">
                         <img src="pics/s.jpg" alt="potrait6">
                         <div class="overlay">
@@ -429,9 +446,9 @@
                 JJGC
             </div>
             <div class="social">
-                <a href="https://web.facebook.com/jellyciousjelly"><i class="fa fa-facebook"></i></a>
-                <a href="https://twitter.com/whtvrimElle"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.instagram.com/jellyciousjelly_"><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
             </div>
         </div>
     </div>
@@ -444,9 +461,7 @@
     </div>
 </section>
 
+
 <script src="script.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
