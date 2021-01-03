@@ -55,7 +55,7 @@ const navbar=document.querySelector(".navbar");
 //         document.querySelector(".navbar").classList.toggle("show");
 //     })
 
-var numberArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12','13','14','15','16'];
+var numberArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16'];
 for (var i = 0; i < numberArray.length; i++){
     let imageIdTag = "#photo" + numberArray[i];
       $(imageIdTag).click(function() {
